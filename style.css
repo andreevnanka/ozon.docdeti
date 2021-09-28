@@ -1,5 +1,3 @@
-/* Global */
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -15,126 +13,122 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
 .page-body {
   width: 100vw;
-  background-position-x: center;
+  background-color: #DBEFFA;
+  background-image: url(img/desktop-back.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.list {
+  list-style: none;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
-  background-color: #DBEFFA;
-  color: #2A4891;
-  background-image: url(img/mobile-back.png);
-  background-repeat: no-repeat;
- }
+}
 
 .button {
-	height: 40px;
-	border-radius: 50px;
-	background-color: #2A4891;
-	color: white;
-	font-size: 20px;
-	border: none;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #2A4891;
+  color: white;
+  font-size: 20px;
+  border: none;
 }
 
 .modal {
-	display: none;
+  display: none;
 }
 
 /* Container */
 
 .container {
+  background-position-x: center;
   position: relative;
-  width: 100%;
+  max-width: 1416px;
+  flex-direction:column;
   margin: 0px auto;
   padding: 0px;
+  font-family: "Roboto", sans-serif;
+  color: #2A4891;
+  background-repeat: no-repeat;
 }
 
 .key-visual {
-	height: 264px;
-	position: relative;
-	background-image: url(img/mobile-keyvisual.svg);
-	background-position-x: 50%;
-	background-repeat: no-repeat;
+  position: relative;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  height: 489px;
+  background-image: url(img/desktop-keyvisual.png);
 }
 
 /* Как участвовать */
 
 .how {
-	margin: 0;
+  margin: 73px 0px 0px;
 }
 
 .how_title {
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: bold;
-	font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 54px;
 }
 
 .how_list {
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	width: 180px;
+  text-align: center;
+  width: 1010px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 130px;
+  margin-left: 50px;
 }
 
 .how_steps {
-	height: 480px;
-	width: 298px;
-	margin: 0 auto;
-	padding-right: 50px;
-	position: relative;
-	left: 20px;
-	background-image: url(img/steps-mobile.svg);
-	background-position-x: 0%;
-	background-repeat: no-repeat;
+  margin: 0 auto;
+  padding-right: 50px;
+  position: relative;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  width: 1140px;
+  background-image: url(img/desktop-steps.png);
 }
 
 .how_item {
-	margin: 0px;
-	font-size: 14px;
-	line-height: 16px;
-	text-align: center;
-	padding-top: 141px;
-	padding-left: 65px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .how_item:nth-child(1) {
-	padding-top: 70px;
-	padding-left: 67px;
-	width: 190px;
-}
+    width: 205px;
+  }
+  .how_item:nth-child(2) {
+    width: 532px;
+  }
 
-.how_item:nth-child(2) {
-	width: 180px;
-	padding-top: 112px;
-	padding-left: 69px;
-}
+  .how_item:nth-child(3) {
+    width: 121px;
+    margin-left: 20px;
+  }
 
-.how_item:nth-child(3) {
-	width: 190px;
-}
 /*Выиграй одну из*/
 
 .promo {
-	text-align: center;
-	margin: 66px auto 100px;
+  text-align: center;
+  margin: 170px 0px 192px;
 }
 
 .promo_title {
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	width: 296px;
-	margin: 0px auto 30px;
+  font-size: 42px;
+  line-height: 49px;
+  padding-bottom: 36px;
+  width: 871px;
+  margin: 0px auto;
 }
 
 .buttons_list{
+  list-style: none;
   padding: 0px;
   margin: 0px auto;
   display: flex;
@@ -144,11 +138,12 @@ input[type="radio"].visually-hidden {
 
 .promo_button {
   display: block;
-	width: 270px;
-	margin: 0px auto;
+  margin: 0px auto;
+  width: 357px;
 }
 
 .promo_link {
+  align-items: center;
   width: 357px;
   padding-top: 20px;
   display: block;
@@ -158,658 +153,192 @@ input[type="radio"].visually-hidden {
 /* Призовой фонд */
 
 .details {
-	margin: 0 auto 106px;
-	width: 270px;
-}
-
-.details_list {
-	width: 222px;
-	padding-left: 50px;
-	background-image: url(img/prizes.svg);
-	background-repeat: no-repeat;
-}
+  margin: 0 auto 256px;
+  width: 1080px;
+  }
 
 .details_title {
-	font-size: 20px;
-	line-height: 23px;
-	font-weight: 400;
-	padding-bottom: 30px;
-	text-align: center;
+  font-size: 42px;
+  line-height: 49px;
+  }
+
+.details_list {
+  width: 100%;
+  padding-left: 50px;
+  background-image: url(img/prizes.svg);
+  background-repeat: no-repeat;
 }
 
 .details_text {
-	font-size: 16px;
-	line-height: 19px;
+  font-size: 30px;
+ line-height: 35px;
 }
 
-/* Что такое */
 .about {
-	margin: 0px auto 59px;
-	width: 270px;
-}
+    margin: 0px auto 127px;
+    width: 1080px;
+  }
 
-.about_titlež{
-	font-size: 20px;
-	line-height: 23px;
-}
+  .about_title {
+    font-size: 42px;
+    line-height: 49px;
+  }
 
-.about_text {
-	font-size: 16px;
-	line-height: 19px;
-}
+  .about_text {
+    font-size: 30px;
+    line-height: 35px;
+  }
 
-/* Преимущества */
+  .advantages {
+    margin: 0px auto 158px;
+    width: 1080px;
+  }
 
-.advantages {
-	margin: 0px auto 40px;
-	width: 270px;
-}
+  .advantages_title {
+    font-size: 42px;
+    line-height: 49px;
+  }
+  .advantages_item {
+    margin: 30px 0;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .advantages_text {
+    font-size: 24px;
+    line-height: 28px;
+  }
 
-.advantages_title {
-	font-size: 20px;
-	line-height: 23px;
-}
-
-.advantages_item {
-	margin: 30px 0;
-	font-size: 16px;
-	line-height: 19px;
-}
-
-.advantages_text {
-	font-size: 16px;
-	line-height: 19px;
-}
 
 /* Условия участия */
 
 .conditions {
-	text-align: center;
-	margin: 0px auto;
-	width: 270px;
+  text-align: center;
+  margin: 0px auto;
+  width: 1080px;
 }
 
 .conditions_title {
-	font-weight: 400;
-	text-align: left;
-	font-size: 20px;
-	line-height: 23px;
-	margin-bottom: 38px;
+  text-align: left;
+  font-size: 42px;
+  line-height: 49px;
+  margin-bottom: 42px;
 }
 
 .conditions_list {
-	text-align: left;
-	width: 200px;
-	list-style: disc;
-	margin: 0 auto 39px;
+  width: 1080px;
+  text-align: left;
+  list-style: disc;
+  margin: 0 auto 0px;
 }
 
 .conditions_item {
-	text-align: left;
-	font-size: 16px;
-	line-height: 19px;
-	margin-left: -40px;
-}
-
-.conditions_link {
-	font-weight: bold;
-	text-decoration: underline;
+  text-align: left;
+  font-size: 30px;
+  line-height: 35px;
+  margin-left: -35px;
 }
 
 .conditions_post-scriptum {
-	font-size: 16px;
-	line-height: 19px;
-	margin-left: -40px;
+  font-size: 30px;
+   line-height: 35px;
+  margin-left: -55px;
+}
+
+.conditions_link {
+  color: #2A4891;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* Кнопка "Правила акции" */ 
 
 .rules_button {
-	width: 258px;
-	margin: 0 auto 62px;
+  font-size: 24px;
+  line-height: 28px;
+  width: 328px;
+  height: 45px;
+  margin: 0 auto 62px;
 }
 
 /* Правила акции */
 
 .rules {
-	width: 270px;
-	height: 6600px;
-	margin: 0 auto;
-	font-size: 16px;
-  line-height: 20px;
+  margin: 0 auto;
   color: #212E4E;
 }
 
 .rules_title {
-	text-align: center;
-	font-size: 10px;
-	line-height: 12px;
-	font-weight: 400;
+  width: 1080px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.rules_list {
+  width: 1080px;
+  margin: 0px auto;
 }
 
 .rules_subitem {
-	font-size: 10px;
-	line-height: 12px;
-	margin-left: 35px;
-	list-style: circle;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 35px;
+  list-style: circle;
 }
 
 .rules_text {
-	font-size: 10px;
-	line-height: 12px;
-	margin: 5px 0;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 5px 0;
 }
 
 .rules_item {
-	font-size: 10px;
-	line-height: 12px;
-	padding-left: 20px;
+  padding-left: 20px;
 }
 
 .rules_paragraph {
-	font-size: 10px;
-	line-height: 12px;
-	text-align: center;
-	padding: 5px 0;
+  text-align: center;
+  padding: 5px 0;
 }
 
 .rules_subparagraph {
-	font-size: 10px;
-	line-height: 12px;
-	padding: 3px 0;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 3px 0;
 }
 
 .rules_img {
-	background-image: url(img/mobile-table.svg);
-	width: 270px;
-	height: 270px;
+  background-image: url(img/);
+   width: 1080px;
+   height: 226px;
 }
 
 .rules-link {
-	font-size: 20px;
-	display: block;
-	text-align: center;
-	height: 25px;
-	padding: 10px;
-	vertical-align: middle;
-	margin: 110px auto;
-	width: 258px;
-	font-weight: bold;
-	text-decoration: none;
+  width: 328px;
+  height: 45px;
+  margin: 110px auto 0px;
+  height: 27px;
+  border-radius: 16px;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* Победители */
 
 .winners_body {
-	background-color: #DBEFFA;
-	background-image: url(img/mobile-window.png);
-	background-repeat: no-repeat;
-	background-position-x: center;
-	color: #2A4891;
-	font-family: "Roboto", sans-serif;
+  background-color: #DBEFFA;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  color: #2A4891;
+  font-family: "Roboto", sans-serif;
 }
 
 .winners_title {
-	text-align: center;
-	width: 230px;
-	margin: 190px auto;
-	height: 150px;
-	font-size: 22px;
-  line-height: 26px;
-	font-weight: bold;
+  text-align: center;
+  height: 150px;
+  font-weight: bold;
 }
 
-/* Tablet */
-
-@media (min-width: 320px) {
-
-  .page-body {
-  	background-image: url(img/tablet-back.png);
-  	background-repeat: no-repeat;
-  }
-
-  .key-visual {
-  	height: 636px;
-	  background-image: url(img/tablet-keyvisual.png);
-  }
-
-  .button {
-  	height: 65px;
-  	font-size: 24px;
-  	line-height: 28px;
-	}
-
-	.how {
-		margin: 56px 0 169px;
-	}
-
-  .how_title {
-  	font-size: 46px;
-  }
-
-  .how_steps {
-	  width: 814px;
-	  height: auto;
-	  background-image: url(img/tablet-steps.png);
-	  background-repeat: no-repeat;
-	  background-position-x: center;
-	  margin: 0 auto;
-  }
-
-  .how_list {
-  	width: 815px;
-  	display: flex;
-  	justify-content: space-between;
-  	padding-top: 100px;
-  	margin-left: -15px;
-  }
-
-  .how_item {
-  	font-size: 24px;
-  	line-height: 28px;
-  }
-
-  .how_item:nth-child(1) {
-  	padding: 0;
-  }
-  .how_item:nth-child(2) {
-  	width: 332px;
-  	padding: 0;
-	}
-
-	.how_item:nth-child(3) {
-		width: 121px;
-		padding: 0;
-		margin-left: 30px;
-	}
-
-	.promo {
-		margin: 178px 0px 110px;
-	}
-
-  .promo_title {
-  	font-size: 36px;
-  	line-height: 42px;
-  	margin-bottom: 85px;
-  	width: 776px;
-  }
-
-	.promo_button {
-		width: 357px;
-	}
-
-	.details_title {
-		font-size: 36px;
-		line-height: 42px;
-		text-align: left;
-		padding-left: 50px;
-	}
-
-	.details {
-		margin: 0 auto 90px;
-		width: 850px;
-	}
-
-	.details_text {
-		font-size: 24px;
-		line-height: 28px;
-	}
-
-	.details_list {
-		width: 830px;
-		height: 305px;
-		padding-left: 60px;
-		background-image: url(img/prizes.svg);
-		background-repeat: no-repeat;
-	}
-
-	.details_item:nth-child(2) {
-		margin-top: 45px;
-	}
-
-	.details_item:nth-child(3) {
-		margin-top: 60px;
-	}
-
-	.about {
-		margin: 0px auto 90px;
-		width: 850px;
-	}
-
-	.about_title {
-		font-size: 36px;
-		line-height: 42px;
-	}
-
-  .about_text {
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  .advantages {
-  	margin: 0px auto 90px;
-  	width: 850px;
-  }
-
-  .advantages_list {
-  	margin-left: 10px;
-  }
-
-  .advantages_title {
-		font-size: 36px;
-		line-height: 42px;
-  }
-  .advantages_item {
-  	margin: 30px 0;
-    font-size: 24px;
-    line-height: 28px;
-  }
-  .advantages_text {
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  .conditions {
-  	text-align: center;
-  	margin: 0px auto;
-  	width: 850px;
-  }
-  .conditions_title {
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 38px;
-  }
-
-  .conditions_list {
-  	text-align: left;
-  	width: 850px;
-  	list-style: disc;
-  	margin: 0 auto 0px;
-  }
-
-  .conditions_item {
-  	text-align: left;
-  	font-size: 20px;
-    line-height: 23px;
-  	margin-left: -20px;
-  }
-
-  .conditions_link {
-  	font-weight: bold;
-  	text-decoration: underline;
-  }
-
-  .conditions_post-scriptum {
-  	font-size: 20px;
-    line-height: 23px;
-  	margin-left: -45px;
-  }
-  /* Кнопка "Правила акции" */ 
-
-  .rules_button {
-  	width: 328px;
-  	height: 45px;
-  	font-size: 22px;
-  	line-height: 26px;
-  	margin: 116px auto 112px;
-  	border-radius: 16px;
-  }
-
-  /* Правила акции */
-
-  .rules {
-  	height: 5800px;
-  	font-size: 16px;
-    line-height: 20px;
-    width: 858px;
-    margin: 130px auto 0px;
-    padding-bottom: 60px;
-  }
-
-  .rules_title {
-  	font-size: 16px;
-  	line-height: 19px;
-  }
-
-  .rules_subitem {
-  	font-size: 16px;
-  	line-height: 19px;]
-  }
-
-  .rules_text {
-  	font-size: 16px;
-  	line-height: 19px;
-  }
-
-  .rules_item {
-  	font-size: 16px;
-  	line-height: 19px;
-  }
-
-  .rules_paragraph {
-  	font-size: 16px;
-  	line-height: 19px;
-  }
-
-  .rules_subparagraph {
-  	font-size: 16px;
-  	line-height: 19px;
-  }
-
-  .rules_img {
-  	background-image: url(img/tablet-table.svg);
-  	width: 850px;
-  	height: 250px;
-  }
-
-  .rules-link {
-  	font-size: 22px;
-	  margin: 110px auto 0px;
-  	width: 328px;
-  	height: 27px;
-  	padding: 10px 6px;
-  }
-
-  .winners_body {
-    background-image: url(img/tablet-window.png);
-	}
-
-	.winners_title {
-	  text-align: center;
-	  width: 649px;
-	  margin: 200px auto;
-	  height: 150px;
-	  font-size: 48px;
-    line-height: 56px;
-	  font-weight: bold;
-  }
-}
-
-/* Desktop */
-
-@media (min-width: 960px) {
-  .page-body {
-  	/*background-image: url(img/desktop-back.png);*/
-  	background-repeat: no-repeat;
-  }
-
-  .key-visual {
-  	height: 489px;
-	  background-image: url(img/desktop-keyvisual.png);
-  }
-
-  .how {
-  	margin: 73px 0px 0px;
-  }
-
-  .how_steps {
-  	margin: 0 auto;
-  	width: 1140px;
-  	left: 0px;
-  	background-image: url(img/desktop-steps.png);
-  }
-
-  .how_list {
-  	width: 1010px;
-  	display: flex;
-  	justify-content: space-between;
-  	padding-top: 130px;
-  	margin-left: 50px;
-  }
-
-  .how_item:nth-child(1) {
-  	width: 205px;
-  }
-  .how_item:nth-child(2) {
-  	width: 532px;
-	}
-
-	.how_item:nth-child(3) {
-		width: 121px;
-		margin-left: 20px;
-	}
-
-	.promo {
-		margin: 170px 0px 192px;
-	}
-
-  .promo_title {
-  	font-size: 42px;
-  	line-height: 49px;
-  	margin-bottom: 36px;
-  	width: 871px;
-  }
-
-	.promo_button {
-		width: 357px;
-	}
-
-	.details_title {
-		font-size: 42px;
-		line-height: 49px;
-	}
-
-	.details {
-		margin: 0 auto 256px;
-		width: 1080px;
-	}
-
-	.details_text {
-		font-size: 30px;
-		line-height: 35px;
-	}
-
-	.details_list {
-		width: 1080px;
-		padding-left: 50px;
-		background-image: url(img/prizes.svg);
-	}
-
-	.about {
-		margin: 0px auto 127px;
-		width: 1080px;
-	}
-
-	.about_title {
-		font-size: 42px;
-		line-height: 49px;
-	}
-
-  .about_text {
-    font-size: 30px;
-    line-height: 35px;
-  }
-
-  .advantages {
-  	margin: 0px auto 158px;
-  	width: 1080px;
-  }
-
-
-  .advantages_title {
-		font-size: 42px;
-		line-height: 49px;
-  }
-  .advantages_item {
-  	margin: 30px 0;
-    font-size: 30px;
-    line-height: 35px;
-  }
-  .advantages_text {
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  .conditions {
-  	text-align: center;
-  	margin: 0px auto;
-  	width: 1080px;
-  }
-  .conditions_title {
-    font-size: 42px;
-    line-height: 49px;
-    margin-bottom: 42px;
-  }
-
-  .conditions_list {
-  	width: 1080px;
-  }
-
-  .conditions_item {
-  	text-align: left;
-  	font-size: 30px;
-    line-height: 35px;
-  	margin-left: -35px;
-  }
-
-  .conditions_link {
-  	font-weight: bold;
-  	text-decoration: underline;
-  }
-
-  .conditions_post-scriptum {
-  	font-size: 30px;
-    line-height: 35px;
-  	margin-left: -55px;
-  }
-  /* Кнопка "Правила акции" */ 
-
-   .rules_button {
-  	font-size: 24px;
-  	line-height: 28px;
-  }
-
-  /* Правила акции */
-
-  .rules {
-    line-height: 19px;
-    width: 1080px;
-    height: 5200px;
-  }
-
-  .rules_img {
-  	background-image: url(img/);
-  	width: 1080px;
-  	height: 226px;
-  }
-
-  .rules-link {
-	  margin: 110px auto 0px;
-  	height: 27px;
-  	border-radius: 16px;
-  }
-
-  .winners_body {
-    background-image: url(img/desktop-window.png);
-	}
-
-	.winners_title {
-	  text-align: center;
-	  width: 1120px;
-	  margin: 280px auto;
-	  height: 150px;
-	  font-size: 64px;
-	  line-height: 75px;
-	  font-weight: bold;
-  }
-}
